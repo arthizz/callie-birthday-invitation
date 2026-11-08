@@ -31,7 +31,7 @@ window.INVITE_CONFIG = {
   rsvpDeadline: "[RSVP DEADLINE]",
   contactName: "Cecille Gallego",
   contactNumber: "+6393-8860-2502",       // shown on the card
-  contactPhoneLink: "+639088602502",                    // digits for tap-to-call / SMS, e.g. "+639171234567" (leave "" to hide those buttons)
+  contactPhoneLink: "+639388602502",                    // digits for tap-to-call / SMS, e.g. "+639171234567" (leave "" to hide those buttons)
   maxGuests: 10,
   // Where RSVPs are sent. Leave "" to only keep them on the guest's own device
   // (see README.md > "Saving RSVPs permanently" for a free Google Sheets setup).
