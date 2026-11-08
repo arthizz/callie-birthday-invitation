@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>One-derful! — A Birthday Invitation</title>
+  <meta name="description" content="You're invited to a very special 2nd birthday celebration.">
+  <meta name="theme-color" content="#F4DEDF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'%3E%3Cpath d='M0-50C4-12 12-4 50 0 12 4 4 12 0 50-4 12-12 4-50 0-12-4-4-12 0-50Z' fill='%23C8A875'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/intro.css">
+  <link rel="stylesheet" href="css/invitation.css">
+</head>
+<body class="is-locked">
+
+<!-- =====================================================================
+     Reusable decorations (flowers, stars, butterflies). Used via <use>.
+     ===================================================================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E9D6AE"/><stop offset=".5" stop-color="#C8A875"/><stop offset="1" stop-color="#E2CB9A"/>
+    </linearGradient>
+
+    <symbol id="i-flower" viewBox="-50 -50 100 100">
+      <g fill="#F4DEDF" stroke="#D9A6AD" stroke-width="1.5">
+        <ellipse cx="0" cy="-27" rx="14" ry="22"/>
+        <ellipse cx="0" cy="-27" rx="14" ry="22" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-27" rx="14" ry="22" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-27" rx="14" ry="22" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-27" rx="14" ry="22" transform="rotate(288)"/>
+      </g>
+      <circle r="10" fill="#E9D6AE"/><circle r="4.5" fill="#C8A875"/>
+    </symbol>
+
+    <symbol id="i-bud" viewBox="-30 -30 60 60">
+      <g fill="#EBC9CB" stroke="#D9A6AD" stroke-width="1.5">
+        <ellipse cx="0" cy="-14" rx="8" ry="13"/>
+        <ellipse cx="0" cy="-14" rx="8" ry="13" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-14" rx="8" ry="13" transform="rotate(240)"/>
+      </g>
+      <circle r="5" fill="#E2CB9A"/>
+    </symbol>
+
+    <symbol id="i-star" viewBox="-50 -50 100 100">
+      <path d="M0-50C4-12 12-4 50 0 12 4 4 12 0 50-4 12-12 4-50 0-12-4-4-12 0-50Z" fill="url(#goldGrad)"/>
+    </symbol>
+
+    <symbol id="i-butterfly" viewBox="-50 -42 100 84">
+      <g stroke-width="1.2">
+        <path d="M0 0C-10-36-50-42-46-12-44 3-16 7 0 0Z" fill="#EBC9CB" stroke="#D9A6AD"/>
+        <path d="M0 2C-8 28-32 40-32 21-32 9-12 4 0 2Z" fill="#F4DEDF" stroke="#D9A6AD"/>
+        <path d="M0 0C10-36 50-42 46-12 44 3 16 7 0 0Z" fill="#EBC9CB" stroke="#D9A6AD"/>
+        <path d="M0 2C8 28 32 40 32 21 32 9 12 4 0 2Z" fill="#F4DEDF" stroke="#D9A6AD"/>
+        <circle cx="-26" cy="-14" r="5" fill="#E9D6AE" opacity=".8"/>
+        <circle cx="26" cy="-14" r="5" fill="#E9D6AE" opacity=".8"/>
+      </g>
+      <ellipse cx="0" cy="2" rx="2.6" ry="13" fill="#A77C83"/>
+      <path d="M0-10C-3-20-8-24-11-25M0-10C3-20 8-24 11-25" fill="none" stroke="#A77C83" stroke-width="1.2" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- A floral spray: curved stem, leaves and blossoms -->
+    <symbol id="i-spray" viewBox="0 0 220 130">
+      <path d="M6 122C60 118 120 96 190 20" fill="none" stroke="#C9B58B" stroke-width="2.4" stroke-linecap="round"/>
+      <g fill="#E8D9B8" stroke="#C9B58B" stroke-width="1">
+        <ellipse cx="40" cy="104" rx="16" ry="6.5" transform="rotate(-38 40 104)"/>
+        <ellipse cx="62" cy="116" rx="16" ry="6.5" transform="rotate(18 62 116)"/>
+        <ellipse cx="92" cy="92" rx="17" ry="6.5" transform="rotate(-52 92 92)"/>
+        <ellipse cx="116" cy="104" rx="16" ry="6.5" transform="rotate(8 116 104)"/>
+        <ellipse cx="146" cy="72" rx="16" ry="6.5" transform="rotate(-62 146 72)"/>
+        <ellipse cx="164" cy="82" rx="14" ry="6" transform="rotate(-8 164 82)"/>
+      </g>
+      <use href="#i-flower" x="66" y="70" width="40" height="40"/>
+      <use href="#i-flower" x="118" y="40" width="48" height="48"/>
+      <use href="#i-bud" x="168" y="4" width="30" height="30"/>
+      <use href="#i-bud" x="10" y="92" width="26" height="26"/>
+    </symbol>
+
+    <!-- Line icons for the details card -->
+    <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></g></symbol>
+  </defs>
+</svg>
+
+
+<!-- =====================================================================
+     1. THE GIFT BOX INTRO
+     ===================================================================== -->
+<section class="intro" id="intro" aria-label="Birthday gift — tap to open">
+  <canvas class="intro__sparkles" id="introSparkles" aria-hidden="true"></canvas>
+  <div class="intro__glow" aria-hidden="true"></div>
+
+  <div class="intro__content">
+    <button class="gift" id="giftBtn" type="button" aria-label="Tap the gift to unwrap your invitation">
+      <span class="gift__ring" aria-hidden="true"></span>
+      <span class="gift__rays" aria-hidden="true"></span>
+
+      <!-- Layer 1: back of the box (shadow + inside) -->
+      <svg class="gift__svg gift__svg--back" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+        <defs>
+          <radialGradient id="shadowGrad" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#A77C83" stop-opacity=".42"/><stop offset="1" stop-color="#A77C83" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="gInside" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8E646B"/><stop offset="1" stop-color="#6F4B52"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="150" cy="276" rx="128" ry="16" fill="url(#shadowGrad)"/>
+        <ellipse cx="150" cy="143" rx="98" ry="15" fill="url(#gInside)"/>
+      </svg>
+
+      <!-- Layer 2: the invitation card hidden inside the box -->
+      <span class="gift__card" id="giftCard" aria-hidden="true">
+        <span class="gift__card-inner">
+          <svg class="gift__card-star" aria-hidden="true"><use href="#i-star"/></svg>
+          <span class="gift__card-script">One-derful!</span>
+          <span class="gift__card-line"></span>
+          <span class="gift__card-small">you're invited</span>
+        </span>
+      </span>
+
+      <!-- Layer 3: front of the box (body, ribbon, lid, bow) -->
+      <svg class="gift__svg gift__svg--front" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="gBody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#EFCFD1"/><stop offset="1" stop-color="#D9A6AD"/>
+          </linearGradient>
+          <linearGradient id="gSide" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".7" stop-color="#A77C83" stop-opacity="0"/><stop offset="1" stop-color="#A77C83" stop-opacity=".34"/>
+          </linearGradient>
+          <linearGradient id="gLid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F6DCDD"/><stop offset="1" stop-color="#DDADB3"/>
+          </linearGradient>
+          <linearGradient id="gRibbon" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#D8BE8A"/><stop offset=".3" stop-color="#F3E5C3"/><stop offset=".55" stop-color="#C8A875"/>
+            <stop offset="1" stop-color="#E2CB9A"/>
+          </linearGradient>
+          <linearGradient id="gLoop" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F3E5C3"/><stop offset=".55" stop-color="#D2B684"/><stop offset="1" stop-color="#B99A66"/>
+          </linearGradient>
+          <linearGradient id="gBodyDark" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#A77C83" stop-opacity="0"/><stop offset="1" stop-color="#A77C83" stop-opacity=".28"/>
+          </linearGradient>
+        </defs>
+
+        <!-- body -->
+        <g class="gift__body">
+          <rect x="50" y="142" width="200" height="130" rx="7" fill="url(#gBody)"/>
+          <rect x="50" y="142" width="200" height="130" rx="7" fill="url(#gSide)"/>
+          <rect x="50" y="142" width="200" height="130" rx="7" fill="url(#gBodyDark)"/>
+          <rect x="50" y="260" width="200" height="2" fill="#C8A875" opacity=".7"/>
+          <g fill="#fff" opacity=".35">
+            <circle cx="82" cy="188" r="2.2"/><circle cx="104" cy="222" r="1.8"/><circle cx="196" cy="196" r="2.2"/>
+            <circle cx="218" cy="236" r="1.8"/><circle cx="76" cy="244" r="1.6"/><circle cx="176" cy="248" r="1.8"/>
+          </g>
+          <rect x="136" y="142" width="28" height="130" fill="url(#gRibbon)"/>
+          <rect x="136" y="142" width="1.6" height="130" fill="#fff" opacity=".6"/>
+          <rect x="162.4" y="142" width="1.6" height="130" fill="#A98A55" opacity=".5"/>
+        </g>
+
+        <!-- lid + bow -->
+        <g class="gift__lid" id="giftLid">
+          <rect x="40" y="106" width="220" height="42" rx="8" fill="url(#gLid)"/>
+          <rect x="40" y="106" width="220" height="42" rx="8" fill="url(#gSide)"/>
+          <rect x="42" y="108" width="216" height="2.4" rx="1.2" fill="#fff" opacity=".55"/>
+          <rect x="40" y="143.6" width="220" height="2.6" fill="#C8A875"/>
+          <rect x="136" y="106" width="28" height="42" fill="url(#gRibbon)"/>
+          <rect x="136" y="106" width="1.6" height="42" fill="#fff" opacity=".6"/>
+
+          <g class="bow" transform="translate(150 108)">
+            <!-- tails -->
+            <g class="bow__tail bow__tail--l">
+              <path d="M-3 4C-18 22-34 32-44 52L-30 50L-27 59C-17 40-8 28 2 10Z" fill="url(#gLoop)"/>
+              <path d="M-3 4C-14 18-24 27-32 40" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.2"/>
+            </g>
+            <g class="bow__tail bow__tail--r">
+              <path d="M3 4C18 22 34 32 44 52L30 50L27 59C17 40 8 28-2 10Z" fill="url(#gLoop)"/>
+              <path d="M3 4C14 18 24 27 32 40" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.2"/>
+            </g>
+            <!-- loops -->
+            <g class="bow__loop bow__loop--l">
+              <path d="M-2 0C-14-50-74-54-66-18-62 0-20 6-2 0Z" fill="url(#gLoop)"/>
+              <path d="M-8-3C-18-34-54-36-52-18-50-8-24-2-8-3Z" fill="#B99A66" opacity=".5"/>
+              <path d="M-12-30C-30-38-52-32-56-22" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.4" stroke-linecap="round"/>
+            </g>
+            <g class="bow__loop bow__loop--r">
+              <path d="M2 0C14-50 74-54 66-18 62 0 20 6 2 0Z" fill="url(#gLoop)"/>
+              <path d="M8-3C18-34 54-36 52-18 50-8 24-2 8-3Z" fill="#B99A66" opacity=".5"/>
+              <path d="M12-30C30-38 52-32 56-22" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.4" stroke-linecap="round"/>
+            </g>
+            <!-- knot -->
+            <g class="bow__knot">
+              <ellipse cx="0" cy="-3" rx="13" ry="11" fill="url(#gRibbon)"/>
+              <ellipse cx="-3" cy="-6" rx="5" ry="3.4" fill="#fff" opacity=".5"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+
+    <div class="intro__text" id="introText">
+      <h1 class="intro__script">You're Invited!</h1>
+      <p class="intro__sub">Someone special is turning <strong>ONE!</strong></p>
+      <p class="intro__hint"><span>Tap the gift to unwrap the surprise</span></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     2. THE INVITATION
+     ===================================================================== -->
+<button class="music-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Turn music on">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></g>
+    <path class="music-btn__slash" d="M4 4l16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<div class="floaters" id="floaters" aria-hidden="true"><canvas id="mainSparkles"></canvas></div>
+
+<main class="invitation" id="invitation" tabindex="-1">
+
+  <!-- ===== Hero ===== -->
+  <header class="hero section">
+    <h2 class="hero__title reveal" data-delay="0"><span class="script">One-derful!</span></h2>
+    <p class="hero__sub reveal" data-delay="1">Join us as we celebrate</p>
+
+    <figure class="portrait reveal" data-delay="2">
+      <div class="portrait__halo" aria-hidden="true"></div>
+      <div class="portrait__ring" aria-hidden="true"></div>
+      <div class="portrait__frame">
+        <!-- ↓ REPLACE THE PHOTO: change `photo` in js/config.js (or swap assets/images/child-portrait.svg) -->
+        <img id="portraitImg" src="assets/images/portrait.png" alt="Portrait of the birthday girl" width="500" height="700" decoding="async">
+      </div>
+
+      <!-- floral & star decorations around the frame -->
+      <svg class="deco deco--spray-tl" aria-hidden="true"><use href="#i-spray"/></svg>
+      <svg class="deco deco--spray-br" aria-hidden="true"><use href="#i-spray"/></svg>
+      <svg class="deco deco--flower-r" aria-hidden="true"><use href="#i-flower"/></svg>
+      <svg class="deco deco--flower-l" aria-hidden="true"><use href="#i-flower"/></svg>
+      <svg class="deco deco--star-1 twinkle" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="deco deco--star-2 twinkle" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="deco deco--star-3 twinkle" aria-hidden="true"><use href="#i-star"/></svg>
+      <svg class="deco deco--bfly-1 butterfly" aria-hidden="true"><use href="#i-butterfly"/></svg>
+      <svg class="deco deco--bfly-2 butterfly" aria-hidden="true"><use href="#i-butterfly"/></svg>
+    </figure>
+
+    <h3 class="hero__name reveal" data-delay="1" data-bind="childName">CALLIE</h3>
+    <p class="hero__age reveal" data-delay="2">
+      <svg class="mini-star" aria-hidden="true"><use href="#i-star"/></svg>
+      <span class="script">Turning One!</span>
+      <svg class="mini-star" aria-hidden="true"><use href="#i-star"/></svg>
+    </p>
+
+    <a class="scroll-cue reveal" data-delay="3" href="#message" aria-label="Scroll to invitation details"><span></span></a>
+  </header>
+
+  <!-- ===== Message ===== -->
+  <section class="section message" id="message">
+    <div class="divider reveal" aria-hidden="true"><i></i><svg><use href="#i-flower"/></svg><i></i></div>
+    <p class="message__text reveal" data-bind="message">One year of laughter, love, and countless precious memories! We would be delighted to have you join us as we celebrate this very special milestone.</p>
+  </section>
+
+  <!-- ===== Countdown ===== -->
+  <section class="section countdown" id="countdown" aria-labelledby="cdTitle">
+    <h2 class="section__title reveal" id="cdTitle"><span class="script">Counting down</span></h2>
+    <div class="countdown__grid reveal" id="cdGrid" role="timer" aria-live="off">
+      <div class="cd"><b id="cdDays">00</b><span>Days</span></div>
+      <div class="cd"><b id="cdHours">00</b><span>Hours</span></div>
+      <div class="cd"><b id="cdMins">00</b><span>Minutes</span></div>
+      <div class="cd"><b id="cdSecs">00</b><span>Seconds</span></div>
+    </div>
+    <p class="countdown__done" id="cdDone" hidden>The celebration has begun!</p>
+  </section>
+
+  <!-- ===== Event details ===== -->
+  <section class="section details" id="details" aria-labelledby="detTitle">
+    <h2 class="section__title reveal" id="detTitle"><span class="script">The Details</span></h2>
+
+    <div class="card reveal">
+      <svg class="card__corner card__corner--tl" aria-hidden="true"><use href="#i-bud"/></svg>
+      <svg class="card__corner card__corner--br" aria-hidden="true"><use href="#i-bud"/></svg>
+
+      <ul class="details__list">
+        <li>
+          <svg class="icon" aria-hidden="true"><use href="#i-cal"/></svg>
+          <div><small>Date</small><strong data-bind="dateText">[BIRTHDAY DATE]</strong></div>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+          <div><small>Time</small><strong data-bind="timeText">[BIRTHDAY TIME]</strong></div>
+        </li>
+        <li>
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <div><small>Venue</small><strong data-bind="venue">[EVENT VENUE]</strong>
+            <span data-bind="address">[COMPLETE ADDRESS]</span></div>
+        </li>
+      </ul>
+
+      <div class="btn-row">
+        <a class="btn btn--primary" id="mapBtn" href="https://www.google.com/maps" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-pin"/></svg> Open in Google Maps
+        </a>
+        <button class="btn btn--ghost" id="calBtn" type="button">
+          <svg aria-hidden="true"><use href="#i-cal"/></svg> Add to Calendar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RSVP ===== -->
+  <section class="section rsvp" id="rsvp" aria-labelledby="rsvpTitle">
+    <!-- <h2 class="section__title reveal" id="rsvpTitle"><span class="script">Kindly RSVP</span></h2>
+    <p class="rsvp__deadline reveal">Please let us know by <strong data-bind="rsvpDeadline">[RSVP DEADLINE]</strong></p>
+
+    <div class="reveal">
+      <button class="btn btn--primary btn--lg" id="rsvpBtn" type="button">Confirm Your Attendance</button>
+    </div> -->
+
+    <div class="rsvp__contact reveal">
+      <p>Questions? Contact</p>
+      <strong data-bind="contactName">[CONTACT PERSON]</strong>
+      <span data-bind="contactNumber">[MOBILE NUMBER]</span>
+      <div class="btn-row btn-row--small" id="contactActions" hidden>
+        <a class="btn btn--ghost btn--sm" id="callBtn" href="#">Call</a>
+        <a class="btn btn--ghost btn--sm" id="smsBtn" href="#">Text</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="section gallery" id="gallery" aria-labelledby="galTitle">
+    <h2 class="section__title reveal" id="galTitle"><span class="script">Little Moments</span></h2>
+    <div class="gallery__grid" id="galleryGrid"></div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="section footer">
+    <div class="divider reveal" aria-hidden="true"><i></i><svg><use href="#i-star"/></svg><i></i></div>
+    <p class="footer__love reveal"><span class="script">With love,</span></p>
+    <p class="footer__hosts reveal" data-bind="hostNames">[HOST NAMES]</p>
+    <button class="btn btn--ghost reveal" id="replayBtn" type="button">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 108-8H8m0 0l3-3M8 4l3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Replay the gift
+    </button>
+  </footer>
+</main>
+
+
+<!-- =====================================================================
+     3. RSVP FORM (native <dialog>)
+     ===================================================================== -->
+<dialog class="modal" id="rsvpDialog" aria-labelledby="rsvpDlgTitle">
+  <div class="modal__panel">
+    <button class="modal__close" type="button" id="rsvpClose" aria-label="Close">×</button>
+
+    <form id="rsvpForm" novalidate>
+      <h2 class="modal__title" id="rsvpDlgTitle"><span class="script">RSVP</span></h2>
+      <p class="modal__lead">We can't wait to celebrate with you!</p>
+
+      <label class="field">
+        <span>Your name</span>
+        <input type="text" name="name" id="rsvpName" autocomplete="name" placeholder="Full name" required maxlength="80">
+        <em class="field__error" data-error-for="name"></em>
+      </label>
+
+      <fieldset class="field choice">
+        <legend>Will you be joining us?</legend>
+        <label class="choice__opt"><input type="radio" name="attending" value="yes" checked><span>Joyfully accept</span></label>
+        <label class="choice__opt"><input type="radio" name="attending" value="no"><span>Regretfully decline</span></label>
+      </fieldset>
+
+      <div class="field" id="guestsField">
+        <span>Number of guests <small>(including you)</small></span>
+        <div class="stepper">
+          <button type="button" id="guestsMinus" aria-label="One fewer guest">−</button>
+          <input type="number" name="guests" id="rsvpGuests" value="1" min="1" max="10" inputmode="numeric" aria-label="Number of guests">
+          <button type="button" id="guestsPlus" aria-label="One more guest">+</button>
+        </div>
+      </div>
+
+      <label class="field">
+        <span>A little note <small>(optional)</small></span>
+        <textarea name="message" rows="3" maxlength="300" placeholder="Wishes, allergies, or anything we should know"></textarea>
+      </label>
+
+      <!-- honeypot: real guests never see or fill this -->
+      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <p class="form__status" id="rsvpStatus" role="status" aria-live="polite"></p>
+      <button class="btn btn--primary btn--block" type="submit" id="rsvpSubmit">Send RSVP</button>
+    </form>
+
+    <div class="modal__thanks" id="rsvpThanks" hidden>
+      <svg class="thanks__star" aria-hidden="true"><use href="#i-star"/></svg>
+      <h2 class="modal__title"><span class="script">Thank you!</span></h2>
+      <p id="thanksText">Your RSVP has been received.</p>
+      <button class="btn btn--ghost" type="button" id="thanksClose">Close</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Photo lightbox -->
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <button class="modal__close" type="button" id="lbClose" aria-label="Close photo">×</button>
+  <img id="lbImg" alt="">
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/config.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/music.js"></script>
+<script src="js/intro.js"></script>
+<script src="js/invitation.js"></script>
+</body>
+</html>

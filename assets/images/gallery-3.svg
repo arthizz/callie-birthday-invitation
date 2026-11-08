@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Gallery placeholder 3">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF9F5"/><stop offset="1" stop-color="#EBC9CB"/></linearGradient></defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <g transform="translate(300 270)">
+    <path d="M0 0C-20-110-190-120-170-30-160 20-60 26 0 0Z" fill="#EBC9CB" stroke="#D9A6AD" stroke-width="3"/>
+    <path d="M0 6C-18 90-100 130-100 70-100 30-40 12 0 6Z" fill="#F4DEDF" stroke="#D9A6AD" stroke-width="3"/>
+    <path d="M0 0C20-110 190-120 170-30 160 20 60 26 0 0Z" fill="#EBC9CB" stroke="#D9A6AD" stroke-width="3"/>
+    <path d="M0 6C18 90 100 130 100 70 100 30 40 12 0 6Z" fill="#F4DEDF" stroke="#D9A6AD" stroke-width="3"/>
+    <ellipse cx="0" cy="8" rx="8" ry="46" fill="#A77C83"/>
+  </g>
+  <text x="300" y="540" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#A77C83">Photo 3</text>
+</svg>

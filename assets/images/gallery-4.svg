@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Gallery placeholder 4">
+  <defs><linearGradient id="g" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4DEDF"/><stop offset="1" stop-color="#E9D6AE"/></linearGradient></defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <g fill="#FFF9F5" opacity=".95">
+    <ellipse cx="220" cy="250" rx="62" ry="78"/><ellipse cx="380" cy="230" rx="62" ry="78" fill="#EBC9CB"/>
+    <ellipse cx="300" cy="190" rx="58" ry="74" fill="#D9A6AD" opacity=".85"/>
+  </g>
+  <g stroke="#C8A875" stroke-width="3" fill="none"><path d="M220 328C230 400 290 440 300 520M380 308C370 390 310 440 300 520M300 264C300 360 300 430 300 520"/></g>
+  <text x="300" y="568" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#A77C83">Photo 4</text>
+</svg>

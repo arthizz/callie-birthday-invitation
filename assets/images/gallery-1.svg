@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Gallery placeholder 1">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4DEDF"/><stop offset="1" stop-color="#D9A6AD"/></linearGradient></defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <path d="M300 130c8-62 24-76 86-86-62-10-78-24-86-86-8 62-24 76-86 86 62 10 78 24 86 86z" transform="translate(0 130) scale(1.3 1.3) translate(-90 20)" fill="#FFF9F5" opacity=".9"/>
+  <path d="M130 470c0-60 40-100 170-100s170 40 170 100z" fill="#FFF9F5" opacity=".6"/>
+  <text x="300" y="540" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#FFF9F5">Photo 1</text>
+</svg>

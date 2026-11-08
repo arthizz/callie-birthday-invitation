@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Gallery placeholder 2">
+  <defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#EBC9CB"/><stop offset="1" stop-color="#FFF9F5"/></linearGradient></defs>
+  <rect width="600" height="600" fill="url(#g)"/>
+  <g transform="translate(300 270)">
+    <g fill="#F4DEDF" stroke="#D9A6AD" stroke-width="3">
+      <ellipse cx="0" cy="-90" rx="46" ry="76"/><ellipse cx="0" cy="-90" rx="46" ry="76" transform="rotate(72)"/>
+      <ellipse cx="0" cy="-90" rx="46" ry="76" transform="rotate(144)"/><ellipse cx="0" cy="-90" rx="46" ry="76" transform="rotate(216)"/>
+      <ellipse cx="0" cy="-90" rx="46" ry="76" transform="rotate(288)"/>
+    </g>
+    <circle r="36" fill="#E9D6AE"/><circle r="16" fill="#C8A875"/>
+  </g>
+  <text x="300" y="540" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#A77C83">Photo 2</text>
+</svg>

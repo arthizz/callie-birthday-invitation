@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Placeholder portrait">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8E7E6"/><stop offset="1" stop-color="#EBC9CB"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".38" r=".6">
+      <stop offset="0" stop-color="#FFF9F5" stop-opacity=".95"/><stop offset="1" stop-color="#FFF9F5" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF9F5"/><stop offset="1" stop-color="#F4DEDF"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <rect width="800" height="1000" fill="url(#glow)"/>
+  <!-- twinkles -->
+  <g fill="#C8A875" opacity=".7">
+    <path d="M140 190c3-26 8-31 34-34-26-3-31-8-34-34-3 26-8 31-34 34 26 3 31 8 34 34z"/>
+    <path d="M660 290c2-18 5-21 23-23-18-2-21-5-23-23-2 18-5 21-23 23 18 2 21 5 23 23z"/>
+    <path d="M610 130c2-14 4-16 18-18-14-2-16-4-18-18-2 14-4 16-18 18 14 2 16 4 18 18z"/>
+  </g>
+  <!-- shoulders / dress -->
+  <path d="M120 1000c0-170 120-250 280-250s280 80 280 250z" fill="url(#dress)"/>
+  <path d="M290 770c30 40 70 58 110 58s80-18 110-58" fill="none" stroke="#C8A875" stroke-width="3" opacity=".7"/>
+  <!-- neck -->
+  <rect x="352" y="690" width="96" height="90" rx="40" fill="#F3D3C4"/>
+  <!-- hair buns -->
+  <circle cx="238" cy="330" r="70" fill="#8B6A5E"/>
+  <circle cx="562" cy="330" r="70" fill="#8B6A5E"/>
+  <!-- head -->
+  <ellipse cx="400" cy="480" rx="196" ry="214" fill="#F6D9CB"/>
+  <path d="M204 462c0-150 80-214 196-214s196 64 196 214c-60-70-130-104-196-104s-136 34-196 104z" fill="#8B6A5E"/>
+  <!-- bows on buns -->
+  <g fill="#D9A6AD">
+    <path d="M238 262l-44-20v40zM238 262l44-20v40z"/><circle cx="238" cy="262" r="10" fill="#C8A875"/>
+    <path d="M562 262l-44-20v40zM562 262l44-20v40z"/><circle cx="562" cy="262" r="10" fill="#C8A875"/>
+  </g>
+  <!-- face -->
+  <ellipse cx="332" cy="500" rx="14" ry="18" fill="#5C4038"/>
+  <ellipse cx="468" cy="500" rx="14" ry="18" fill="#5C4038"/>
+  <circle cx="337" cy="493" r="4.5" fill="#fff"/><circle cx="473" cy="493" r="4.5" fill="#fff"/>
+  <circle cx="290" cy="560" r="32" fill="#EBA9A9" opacity=".55"/>
+  <circle cx="510" cy="560" r="32" fill="#EBA9A9" opacity=".55"/>
+  <path d="M356 580c26 32 62 32 88 0" fill="none" stroke="#B5656F" stroke-width="7" stroke-linecap="round"/>
+  <!-- caption -->
+  <text x="400" y="930" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="34" fill="#A77C83">Your photo goes here</text>
+</svg>
