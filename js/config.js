@@ -21,7 +21,7 @@ window.INVITE_CONFIG = {
   venue: "Pahuway Mountain View Resort",
   address: "Sampaguita St, 2200 Olongapo City, Philippines, Olongapo, Philippines, 2200",
   // Paste your Google Maps share link here (Maps > Share > Copy link).
-  mapsUrl: "https://www.bing.com/maps/search?v=2&pc=FACEBK&mid=8100&name=Sampaguita+St%2C+2200+Olongapo+City%2C+Philippines%2C+Olongapo%2C+Philippines%2C+2200&mkt=en-US&fbclid=IwY2xjawVeKmBleHRuA2FlbQIxMABwZG9mAWJyaWQRMTR1ZTU2dzV2NDhydUhEUFBzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEfkgRxkRzk5INMsXhN9iZaVlUGWg36P9pZYTUfu5lDWZ11mAKEcjy4JOAJU3A_aem_2TbXhcs_NBNodw4w-0LPRw&FORM=FBKPL1&q=14.85304%2C+120.25322&cp=14.853040%7E120.253220&lvl=16&style=r",
+  mapsUrl: "https://www.google.com/maps/place/Pahuway+Mountain+Resorts/@14.850762,120.3326408,17.25z/data=!4m6!3m5!1s0x339671307e7a8c01:0xc9d493e0f1474fe8!8m2!3d14.8507917!4d120.332744!16s%2Fg%2F11pzkkgtlf?entry=ttu&g_ep=EgoyMDI2MTEwNC4wIKXMDSoASAFQAw%3D%3D",
 
   /* ---- Words ------------------------------------------------------------ */
   message: "One year of giggles, love, and countless precious memories! Our little one is turning ONE, and we'd be delighted to have you join us as we celebrate this special milestone. Let's make this day filled with laughter, joy, and unforgettable memories!",
